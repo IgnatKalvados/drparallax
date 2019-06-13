@@ -1,0 +1,325 @@
+@font-face {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/LibreBaskerville-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    transform: rotateZ(-1px);
+        .top_head {
+            width: 100%;
+            max-height: 41px;
+            padding-top: 29px;
+            display: flex;
+            flex-direction: row;
+             justify-content: space-between;
+                .logo {
+                max-width: 260px;
+                max-height: 40px;
+                }
+                nav{
+                width: 100%;
+                max-width: 713px;
+                min-height: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+               
+                a {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+                padding: 18px 0;
+                }
+            }
+            .phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-right: 20px;
+                min-width: 141px;
+                p {
+                    color: #fff;
+                    margin: 0;
+                }
+            }
+            .search {
+            min-width: 37px;
+            min-height: 37px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                img {
+                width: 15px;
+                height: 15px;
+                }
+            }
+        }
+            .header_content { 
+               
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h1 {
+                font-family: Libre Baskerville;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 70px;
+                line-height: 99px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                padding-left: 50px;
+                } 
+                .form { 
+                    height: 100%;
+                    width: 100%;  
+                    max-width: 605px;
+                    max-height: 502px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 30px 0;
+                    .form_container {
+                        max-width: 465px;
+                        margin: 0 auto;
+                    h2 {
+                    font-family: Libre Baskerville;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 48px;
+                    text-align: center;
+                    color: #262626;
+                    }
+                    div {
+                        width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .inform {
+                    max-width: 128px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #555555;
+                    margin: 15px 0;
+                    margin-right: 20px;
+                    
+                    }
+                        input {
+                        width: 100%;
+                        min-width: 316px;
+                        height: 44px;
+                        background: #FFFFFF;
+                        border: 1px solid #EAEAEA;
+                        box-sizing: border-box;
+                        border-radius: 50px;
+                        outline: none;
+                        padding: 0 10px;
+                        }
+                        textarea {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 16px;
+                            max-width: 316px;
+                            min-height: 80px;
+    
+                        }
+                    }
+                    .more_options {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 30px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        color: #262626;
+                        &::before {
+                            content: url("../images/plus.svg");
+                            min-width: 23px;
+                            min-height: 23px;
+                            margin-right: 10px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                    button {
+                        width: 100%;
+                        
+                        margin: 0 auto;
+                        max-width: 280px;
+                        min-height: 45px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        display: flex;
+                        align-content: center;
+                        justify-content:  center;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        background: #042C5B;
+                        border-radius: 50px;
+                        cursor: pointer;                    
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+    }
+.who_we_are {
+    background-color: #fff; 
+    transform-style: inherit;
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+    opacity: 1;
+     
+     .who_wrap {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: 0 auto;
+         padding-bottom: 250px;
+         p {
+            font-family: Libre Baskerville;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 90px;
+            line-height: 90px;
+            display: flex;
+            align-items: center;
+            text-align: center;   
+            color: #CEE2FA;
+            text-align: center;
+            margin: 0;
+            padding-top: 100px;
+            display: block;
+            transform-style: preserve-3d;
+            transform: rotateZ(-10px)
+         }
+         h2 {
+             font-family: Libre Baskerville;
+             font-style: normal;
+             font-weight: bold;
+             font-size: 32px;
+             line-height: 48px;
+             text-align: center;
+             color: #262626;
+             margin-bottom: 100px;
+             padding-top: 20px;
+         }
+         .who_content {
+             display: flex;
+             flex-direction: row;
+             .rings_foto {
+                 min-height: 450px;
+                 width: 50%;
+                 position: relative;
+                 .foto_second {
+                 max-width:  332px;
+                 max-height: 403px;
+                 z-index: 0;
+                 position: absolute;
+                 top: 0;
+                 right: 0;
+                 }
+                 .foto_first {
+                 max-width: 293px;
+                 max-height: 269px;
+                 z-index: 1;
+                 position: absolute;
+                 bottom: 0;
+                 left: 0;
+                 }
+             }
+             .who_text {
+                 width: 50%;
+                 padding-left: 40px;
+                 h5 {
+                     font-family: Montserrat;
+                     font-style: normal;
+                     font-weight: normal;
+                     font-size: 16px;
+                     line-height: 30px;    
+                     color: #555555;
+                       
+                 }
+             }
+         }
+     }
+ }
+ .parallax { 
+    perspective: 1px;
+     height: 100vh;
+  //    создает эффект глубины
+     overflow-x: hidden;
+     overflow-y: auto;
+  // позволяет скроллить контент внутри элемента
+ }
+ // этот класс будет определять слой для элементов, к которым будет применен эффект параллакса. Этот элемент абсолютно спозиционирован и занимает весь контейнер.
+ .parallax__layer {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     padding: 220px 0;
+ }
+ // используются для определения скорости скроллинга, с помощью задания смещения по оси Z
+ .parallax__layer--base {
+     transform: translateZ(0);
+ }
+ // используются для определения скорости скроллинга, с помощью задания смещения по оси Z
+ .parallax__layer--back {
+     transform: translateZ(-1px) scale(1);;
+ }

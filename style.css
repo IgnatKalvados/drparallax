@@ -1,0 +1,444 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: Libre Baskerville;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/LibreBaskerville-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform: rotateZ(-1px);
+          transform: rotateZ(-1px);
+}
+
+header .top_head {
+  width: 100%;
+  max-height: 41px;
+  padding-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .top_head .logo {
+  max-width: 260px;
+  max-height: 40px;
+}
+
+header .top_head nav {
+  width: 100%;
+  max-width: 713px;
+  min-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .top_head nav a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 18px 0;
+}
+
+header .top_head .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  min-width: 141px;
+}
+
+header .top_head .phone p {
+  color: #fff;
+  margin: 0;
+}
+
+header .top_head .search {
+  min-width: 37px;
+  min-height: 37px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .top_head .search img {
+  width: 15px;
+  height: 15px;
+}
+
+header .header_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header_content h1 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding-left: 50px;
+}
+
+header .header_content .form {
+  height: 100%;
+  width: 100%;
+  max-width: 605px;
+  max-height: 502px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 0;
+}
+
+header .header_content .form .form_container {
+  max-width: 465px;
+  margin: 0 auto;
+}
+
+header .header_content .form .form_container h2 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #262626;
+}
+
+header .header_content .form .form_container div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_content .form .form_container div .inform {
+  max-width: 128px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin: 15px 0;
+  margin-right: 20px;
+}
+
+header .header_content .form .form_container div input {
+  width: 100%;
+  min-width: 316px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  outline: none;
+  padding: 0 10px;
+}
+
+header .header_content .form .form_container div textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  max-width: 316px;
+  min-height: 80px;
+}
+
+header .header_content .form .form_container .more_options {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #262626;
+}
+
+header .header_content .form .form_container .more_options::before {
+  content: url("../images/plus.svg");
+  min-width: 23px;
+  min-height: 23px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+header .header_content .form button {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 280px;
+  min-height: 45px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #042C5B;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.who_we_are {
+  background-color: #fff;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+          transform: translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  opacity: 1;
+}
+
+.who_we_are .who_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 250px;
+}
+
+.who_we_are .who_wrap p {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #CEE2FA;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateZ(-10px);
+          transform: rotateZ(-10px);
+}
+
+.who_we_are .who_wrap h2 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+
+.who_we_are .who_wrap .who_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.who_we_are .who_wrap .who_content .rings_foto {
+  min-height: 450px;
+  width: 50%;
+  position: relative;
+}
+
+.who_we_are .who_wrap .who_content .rings_foto .foto_second {
+  max-width: 332px;
+  max-height: 403px;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.who_we_are .who_wrap .who_content .rings_foto .foto_first {
+  max-width: 293px;
+  max-height: 269px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.who_we_are .who_wrap .who_content .who_text {
+  width: 50%;
+  padding-left: 40px;
+}
+
+.who_we_are .who_wrap .who_content .who_text h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+}
+
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 220px 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px) scale(1);
+          transform: translateZ(-1px) scale(1);
+}
+/*# sourceMappingURL=style.css.map */
